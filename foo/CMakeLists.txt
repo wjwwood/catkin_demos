@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(foo)
 
-find_package(catkin REQUIRED COMPONENTS roscpp foo_msgs)
+find_package(catkin REQUIRED COMPONENTS foo_msgs)
 
 catkin_package()
 
