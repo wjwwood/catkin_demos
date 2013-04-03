@@ -38,7 +38,10 @@ endif()
 
 ## This is an alternative method
 ## Add gtest based cpp test target and link libraries
-catkin_add_gtest(${PROJECT_NAME}2-test test/test_with_data2.cpp WORKING_DIRECTORY test)
+catkin_add_gtest(${PROJECT_NAME}2-test
+  test/test_with_data2.cpp
+  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/test
+)
 if(TARGET ${PROJECT_NAME}2-test)
   target_link_libraries(${PROJECT_NAME}2-test add)
 endif()
