@@ -12,6 +12,7 @@ class SomeTests : public ::testing::Test {};
 TEST_F(SomeTests, test_add) {
   std::fstream in;
   in.open("data/test.dat", std::fstream::in);
+  ASSERT_FALSE(in.fail());
   int op1, op2, expected;
   while (in >> op1 >> op2 >> expected) {
     EXPECT_EQ(expected, test_with_data::add(op1, op2));
