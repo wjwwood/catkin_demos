@@ -1,0 +1,2 @@
+# If the install prefix is `/opt/ros/hydro` this should be `/opt/ros/hydro/share/<package_name>/data`
+set(@PROJECT_NAME@_DATA_DIR "${@PROJECT_NAME@_DIR}/../../../@CATKIN_PACKAGE_SHARE_DESTINATION@/data")

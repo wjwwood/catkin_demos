@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <name>package_using_data</name>
+  <version>0.0.0</version>
+  <description>package using a resource in package_with_data</description>
+
+  <maintainer email="bar@baz.com">william</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>package_with_data</build_depend>
+  <run_depend>package_with_data</run_depend>
+
+</package>
